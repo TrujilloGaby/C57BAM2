@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/icon2.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/registro.css">
+    <title>Cine Coleccionables</title>
+</head>
+
+<body>
+
+    <header class="cabecera"> <!-- Header -->
+        <div class="logo py-1 d-flex justify-content-center">
+            <a href="../index.html"><img src="../img/loguito2.png" alt="logo"></a>
+        </div>
+    </header>
+
+    <nav class="navbar justify-content-center sticky-top"> <!-- Barra de navegación Menú -->
+        <ul class="nav">
+            <li class="nav-item">
+            <a class="nav-link py-1 px-3" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link py-1 px-3" href="../html/shopcatalogo.html">Tienda</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link py-1 px-3 activo" href="../html/registro.html">Iniciar sesión</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="mx-2 my-4 px-"> <!-- Formulario -->
+        <article class="formulario container">
+
+        <!--Bloque de inicio de sesion si tiene cuenta-->
+            <div class="sesion">
+                <p>Para continuar, inicia sesión con tu cuenta registrada.</p>
+                <form action="#" method="post">
+
+                <div class="mb-3">
+            <!--<label class="form-label">Correo electrónico</label>-->
+                <input type="email" class="field" size="35" id="email-login" placeholder="Correo electrónico" required     minlength="4" maxlength="20">
+                </div>
+
+                <div class="mb-3">
+                <!--<label class="form-label">Contraseña</label>-->
+                <input type="password" class="field" size="35" id="pass-login" minlength="4" maxlength="10" placeholder="Contraseña" required>
+                </div>
+
+                <button type="submit" class="buttonf">Iniciar sesión</button>
+
+                </form>
+            </div>
+
+
+            <div class="barra">
+                <hr data-content="o" class="hr-text">
+            </div>
+
+
+        <!-- Bloque donde el usuario se registra por primera vez-->
+            <div class="regis">
+                <p>Crear cuenta nueva</p>
+                <form action="#" method="post">
+
+                <div class="mb-3">
+                    <!--<label class="form-label">Correo electrónico</label>-->
+                    <input type="email" class="field" size="35" id="email-regis" placeholder="Pon tu correo electrónico" required minlength="4" maxlength="20">
+                </div>
+
+                <div class="mb-3">
+                <!--<label class="form-label">Contraseña</label>-->
+                    <input type="password" class="field" size="35" id="pass-regis" maxlength="10" placeholder="Crea una contraseña"
+            required>
+                </div>
+
+                <div class="mb-3">
+                    <!--<label class="form-label">Nombre de usuario</label>-->
+                    <input type="text" class="field" size="35" id="name-regis" maxlength="20" placeholder="Elige tu nombre de usuario"
+            required>
+                </div>
+
+
+                <div class="mb-3">
+                    <div>
+                        <label class="gen">Género</label>
+                </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sexo" id="hombre" value="hombre" required> Hombre
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sexo" id="mujer" value="mujer" required>Mujer
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sexo" id="binario" value="binario" required>No binario
+                    </div>
+            </div>
+
+
+                <div class="mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="notis" id="notis">
+                        <label class="form-check-label" for="notis">Deseo recibir notificaciones sobre descuentos y/o
+            promociones.</label>
+                    </div>
+                </div>
+
+
+            <button type="submit" class="buttonf">Registrarme</button>
+
+                </form>
+            </div>
+
+        </article>
+    </main>
+
+    <footer class="px-4"> <!-- Footer -->
+        <div class="row">
+            <div class="menu col">
+                <h4>Menú</h4>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../html/shopcatalogo.html">Tienda</a></li>
+                    <li><a href="registro.html">Iniciar sesión</a></li>
+                </ul>
+            </div>
+            <div class="others col">
+                <h4>Otros</h4>
+                <ul>
+                    <li><a href="">Preguntas frecuentes</a></li>
+                    <li><a href="">Términos y condiciones</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-abajo  d-flex align-items-center flex-column flex-sm-row justify-content-between">
+            <div class="copy">
+                <p>GT © 2023 | Reservados todos los derechos</p>
+            </div>
+            <div class="redes">
+                <a class="social" href="https://www.facebook.com/" target="_blank">
+                <img src="../img/fbc.png" alt="facebook"></a>
+                <a href="https://www.twitter.com/" target="_blank">
+                <img src="../img/twc.png" alt="twitter"></a>
+                <a href="https://www.instagram.com/" target="_blank">
+                <img src="../img/insc.png" alt="instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
