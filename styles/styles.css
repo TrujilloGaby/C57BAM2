@@ -15,8 +15,6 @@ h2{
 }
 
 
-
-
 /* -- Animación del Logo de cabecera -- */
 /* El logo se desplzara de izquierda al centro de la página. */
 
@@ -41,6 +39,22 @@ h2{
     }
 }
 
+/* -- CSS del botón "Modo Oscuro" -- */
+
+#botonOscuro{
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(221, 221, 221);
+    border-bottom: 10px;
+    border-radius: 25px;
+    border-color: rgb(75, 75, 75);
+    background-color: rgb(75, 75, 75);
+    padding: 4px 16px;
+    margin-left: 8px;
+}
+
+
+
 .titulo{
     text-align: center;
     text-transform: uppercase;
@@ -52,42 +66,46 @@ h2{
     letter-spacing: 1.0vh;
 }
 
-.subtitulo{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding-left: 0%;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: underline;
-    text-decoration-color: gray;
-
-}
-
-.img-titulo{
-    float: left;
-}
-
-.presentacion{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    height: auto;
-}
-
 ::selection{
     color: white;
     background: #2e2f33;
 }
 
-.texto{
-    font-size: 20px;
+.subtitulo{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: gray;
+}
+
+.texto-presentacion{
+    font-size: 1.4em;
+    margin-top: 40px;
+    margin-bottom: 40px;
     text-align: justify;
 }
+
+.texto-descripcion{
+    font-size: 1.4em;
+}
+
+.img-novedades{
+    margin-right: 40px;
+    margin-bottom: 30px;
+}
+
+.img-presentacion{
+    text-align: center;
+}
+
 
 /* -- Barra de navegación -- */
 
 .navbar{
     font-family: 'Orbitron', monospace;
-    font-size: large;
+    font-size: larger;
     background-color: #1a1c1f;
     margin-bottom: 10px;
 }
@@ -179,7 +197,6 @@ footer ul{
 }
 
 /* -- Fuente responsive, no sé si anda bien xd-- */
-
 @media (min-width: 320px) {
     body {
         font-size: calc(0.875rem + ((1vw - 3.2px) * 0.125));
@@ -192,23 +209,23 @@ footer ul{
     }
 }
 
+@media (max-width: 500px) {
+    .subtitulo{
+        font-size: 25px;
+    }
+    .texto-descripcion, .texto-presentacion{
+        font-size: 15px;
+    }
+}
 
 @media (min-width: 320px) {
     .titulo {
         font-size: calc(1.5rem + ((1vw - 3.2px) * 1));
         min-height: 0vw;
     }
-
-    .subtitulo {
-        font-size: calc(1.5rem + ((1vw - 3.2px) * 1));
-        min-height: 0vw;
-    }
 }
-@media (max-width: 1920px) {
+@media (min-width: 1920px) {
     .titulo {
-        font-size: 40px;
-    }
-    .subtitulo{
-        font-size: 30px;
+    font-size: 40px;
     }
 }
