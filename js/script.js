@@ -32,7 +32,7 @@ function toggleMode() {
 
 //JS hace un zoom al pasar el mouse sobre las imagenes del index
 const container = document.getElementById('container');
-const img = document.getElementById('img-titulo');
+const img = document.querySelector('.img-titulo');
 
 container.addEventListener('mousemove', (e) => {
     const x = e.clientX - e.target.offsetLeft;
