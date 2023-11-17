@@ -48,3 +48,13 @@ container,addEventListener('mouseleave', () => {
     img.style.transformOrigin = 'center';
     img.style.transform = 'scale(1)';
 })
+
+
+//Al hacer clic en comprar tira mensaje "Producto agregado correctamente" al carrito
+
+const cardButton = document.getElementById('car-button');
+cardButton.onclick = muestraAlerta;
+
+function muestraAlerta(evento) {
+    alert("Producto agregado correctamente ✅");
+}
